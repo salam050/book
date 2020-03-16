@@ -1,0 +1,142 @@
+/* Global Styles : DO NOT EDIT */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.book {
+	width: 400px;
+	height: 600px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -300px;
+	margin-left: -200px;
+	background:black;
+}
+
+.title {
+	z-index: 0;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.notsmile {
+	z-index: 2;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+
+.smile {
+	z-index: 10;
+	position:absolute;
+	top:425px;
+	left:42px;
+	opacity:0;
+	transition:1s;
+	
+}
+
+	
+
+.smile:hover {
+	opacity:1;
+	position:absolute;
+	top:425px;
+	left:42px;
+}
+
+
+.stars {
+	z-index: 1;
+	position:absolute;
+	left:0;
+	top:0;
+	transition:1s;
+	animation: fade_stars 2s infinite alternate;
+	
+}
+
+.twinkle {
+	position:absolute;
+	transform-origin: 50% 50%;
+	opacity:.5;
+	animation: twinkle 10s infinite alternate;
+}
+
+#one {
+	left:48px;
+	top:48px;
+	animation-delay:1s;
+}
+
+#two{
+	left:202px;
+	top:50px;
+}
+
+#three{
+	left:83px;
+	top:99px;
+	animation-delay:3s;
+}
+
+#four{
+	left:330px;
+	top:86px;
+	animation-delay:2s;
+}
+
+#five{
+	left:238px;
+	top:150px;
+	animation-delay:.5s;
+}
+
+#six{
+	left:35px;
+	top:137px;
+	animation-delay:4s;
+}
+
+#seven{
+	left:76px;
+	top:163px;
+	animation-delay:1s;
+}
+
+#eight{
+	left:326px;
+	top:43px;
+	animation-delay:.5s;
+}
+
+@keyframes fade_stars {
+	0%{opacity:.1;}
+	100% {opacity:.7;}
+}
+
+@keyframes twinkle {
+	0%{transform: rotate(0deg); opacity:.5;}
+	20%{transform: rotate(-20deg); opacity:1;}
+	40%{transform: rotate(40deg); opacity:.8;}
+	60%{transform: rotate(-10deg); opacity:.3;}
+	80%{transform: rotate(20deg); opacity:1;}
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
